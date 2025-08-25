@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"ratmod.modid.Ratmod"
+			"name.modid.Ratmod"
 		],
 		"client": [
-			"ratmod.modid.RatmodClient"
+			"name.modid.RatmodClient"
 		]
 	},
 	"mixins": [
