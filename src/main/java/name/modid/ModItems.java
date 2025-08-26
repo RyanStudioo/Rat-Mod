@@ -18,6 +18,8 @@ public class ModItems {
     public static final Item cheese = register("cheese", Item::new, new Item.Settings().food(
             new FoodComponent.Builder().nutrition(4).saturationModifier(2).build()));
 
+
+
     public static void itemGroup(RegistryKey <ItemGroup> group, Item item) {
         ItemGroupEvents.modifyEntriesEvent(group).register((itemGroup) -> itemGroup.add(item));
     }
@@ -39,6 +41,8 @@ public class ModItems {
         Item test = register("test", Item::new, new Item.Settings().food(
                 new FoodComponent.Builder().nutrition(4).saturationModifier(2).build()));
         itemGroup(ItemGroups.FOOD_AND_DRINK, cheese);
+        itemGroup(ItemGroups.BUILDING_BLOCKS, ModBlocks.CHEESE_BLOCK.asItem());
+
 
 
     }

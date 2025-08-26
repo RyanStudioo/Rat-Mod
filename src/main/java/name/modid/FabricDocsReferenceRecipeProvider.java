@@ -28,9 +28,9 @@ public class FabricDocsReferenceRecipeProvider extends FabricRecipeProvider {
             public void generate() {
                 RegistryWrapper.Impl<Item> itemLookup = registries.getOrThrow(RegistryKeys.ITEM);
 
-                createShapeless(RecipeCategory.FOOD, ModItems.cheese) // You can also specify an int to produce more than one
-                        .input(Items.MILK_BUCKET) // You can also specify an int to require more than one, or a tag to accept multiple things
-                        .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
+                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHEESE_BLOCK) // You can also specify an int to produce more than one
+                        .input(ModItems.cheese, 9) // You can also specify an int to require more than one, or a tag to accept multiple things
+                        .criterion(hasItem(ModItems.cheese), conditionsFromItem(ModItems.cheese))
                         .offerTo(exporter);
             }
         };
