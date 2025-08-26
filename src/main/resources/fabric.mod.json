@@ -20,8 +20,11 @@
 		],
 		"client": [
 			"name.modid.RatmodClient"
-		]
-	},
+		],
+      "fabric-datagen": [
+        "name.modid.FabricDocsReferenceDataGenerator"
+      ]
+    },
 	"mixins": [
 		"ratmod.mixins.json",
 		{
