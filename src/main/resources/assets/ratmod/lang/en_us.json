@@ -1,5 +1,6 @@
 {
   "item.ratmod.test": "Test Item",
   "item.ratmod.cheese": "Cheese",
-  "block.ratmod.cheese_block": "Cheese Block"
+  "block.ratmod.cheese_block": "Cheese Block",
+  "item.ratmod.cheese_block": "Cheese Block"
 }

@@ -15,6 +15,7 @@ import java.util.function.Function;
 
 public class ModBlocks {
     public static final Block CHEESE_BLOCK = register("cheese_block", Block::new, AbstractBlock.Settings.create(), true);
+
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
         // Create a registry key for the block
         RegistryKey<Block> blockKey = keyOfBlock(name);
