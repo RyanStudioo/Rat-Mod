@@ -12,7 +12,7 @@ public class RatEntityModel extends SilverfishEntityModel {
         super(modelPart);
     }
 
-    public static EntityModelLayer getLayer() {
+    public static EntityModelLayer getLayer(String path) {
         return LAYER;
     }
 }

@@ -23,6 +23,7 @@ public class Ratmod implements ModInitializer {
         ModItems.initialize();
         ModBlocks.initialize();
         ModEntities.registerEntities();
+        ModEntitySpawns.initialize();
 		LOGGER.info("[RatMod] Successfully Initialized");
 	}
 }
