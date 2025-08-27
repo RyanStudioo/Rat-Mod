@@ -16,15 +16,15 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"name.modid.Ratmod"
+			"io.github.ryanstudioo.Ratmod"
 		],
 		"client": [
-			"name.modid.RatmodClient"
+			"io.github.ryanstudioo.RatmodClient"
 		],
-      "fabric-datagen": [
-        "name.modid.FabricDocsReferenceDataGenerator"
-      ]
-    },
+		"fabric-datagen": [
+			"io.github.ryanstudioo.RatmodDataGenerator"
+		]
+	},
 	"mixins": [
 		"ratmod.mixins.json",
 		{
@@ -34,7 +34,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.17.2",
-		"minecraft": "~1.21.8",
+		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
