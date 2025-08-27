@@ -1,4 +1,4 @@
-package name.modid;
+package io.github.ryanstudioo;
 
 import net.fabricmc.api.ClientModInitializer;
 
