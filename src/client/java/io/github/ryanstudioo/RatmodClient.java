@@ -16,5 +16,6 @@ public class RatmodClient implements ClientModInitializer {
 
         // Register the entity renderer
         EntityRendererRegistry.register(ModEntities.RAT, EntityRenderer::new);
+
     }
 }
