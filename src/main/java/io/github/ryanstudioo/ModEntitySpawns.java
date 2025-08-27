@@ -29,7 +29,7 @@ public class ModEntitySpawns {
                     int light = world.getLightLevel(pos);
                     boolean solidBlockBelow = !world.getBlockState(pos.down()).isAir();
                     boolean airAbove = world.getBlockState(pos).isAir();
-                    boolean underground = pos.getY() <= 50
+                    boolean underground = pos.getY() <= 50;
                     boolean canSpawn = light <= 8 && solidBlockBelow && airAbove && underground;
 
                     return canSpawn;
