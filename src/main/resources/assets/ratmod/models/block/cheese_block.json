@@ -1,6 +1,12 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "ratmod:block/cheese_block"
+    "up": "ratmod:block/cheese_block_top_bottom",
+    "down": "ratmod:block/cheese_block_top_bottom",
+    "north": "ratmod:block/cheese_block",
+    "south": "ratmod:block/cheese_block",
+    "east": "ratmod:block/cheese_block",
+    "west": "ratmod:block/cheese_block",
+    "particle": "ratmod:block/cheese_block"
   }
 }

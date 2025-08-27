@@ -1,6 +1,7 @@
 package io.github.ryanstudioo.entity;
 
 import io.github.ryanstudioo.ModEntities;
+import io.github.ryanstudioo.goals.StayNearBlock;
 import io.github.ryanstudioo.items.ModItems;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
@@ -41,10 +42,11 @@ public class RatEntity extends AnimalEntity {
         this.goalSelector.add(2, new EscapeSunlightGoal(this, 1.0));
         this.goalSelector.add(3, new AnimalMateGoal(this, 1.2D));
         this.goalSelector.add(4, new TemptGoal(this, 1.1D, stack -> stack.isOf(ModItems.cheese), false));
-        this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.add(6, new WanderAroundGoal(this, 1.0D));
-        this.goalSelector.add(7, new WanderAroundFarGoal(this, 1.0D));
-        this.goalSelector.add(8, new LookAroundGoal(this));
+        this.goalSelector.add(5, new StayNearBlock(this, 0.9, 10));
+        this.goalSelector.add(6, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.add(7, new WanderAroundGoal(this, 1.0D));
+        this.goalSelector.add(8, new WanderAroundFarGoal(this, 1.0D));
+        this.goalSelector.add(9, new LookAroundGoal(this));
     }
 
     @Override

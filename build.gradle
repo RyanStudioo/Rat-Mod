@@ -74,7 +74,9 @@ jar {
 
 	from("LICENSE") {
 		rename { "${it}_${inputs.properties.archivesName}"}
+
 	}
+
 }
 
 // configure the maven publication
