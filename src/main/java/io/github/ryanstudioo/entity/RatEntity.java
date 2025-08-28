@@ -38,7 +38,7 @@ public class RatEntity extends AnimalEntity {
     @Override
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new EscapeDangerGoal(this, 1.0));
+        this.goalSelector.add(1, new EscapeDangerGoal(this, 1.5));
         this.goalSelector.add(2, new EscapeSunlightGoal(this, 1.0));
         this.goalSelector.add(3, new AnimalMateGoal(this, 1.2D));
         this.goalSelector.add(4, new TemptGoal(this, 1.1D, stack -> stack.isOf(ModItems.cheese), false));

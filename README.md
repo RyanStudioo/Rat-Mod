@@ -16,5 +16,5 @@ Steps:
 
 
 ## Credits:
-- Cheese + Cheese Block textures: mountainshaper (discord)
+- Cheese + cheese_block_top_bottom textures: mountainshaper (discord)
 - Rat texture: https://minecraft.novaskin.me/post/3588823282/mousey

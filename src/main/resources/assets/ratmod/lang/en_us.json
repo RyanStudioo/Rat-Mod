@@ -1,5 +1,10 @@
 {
   "item.ratmod.cheese": "Cheese",
   "block.ratmod.cheese_block": "Cheese Block",
-  "item.ratmod.cheese_block": "Cheese Block"
+  "item.ratmod.cheese_block": "Cheese Block",
+
+  "entity.ratmod.rat": "Rat",
+  "item.ratmod.rat_spawn_egg": "Rat Spawn Egg",
+
+  "itemGroup.ratmod.ratmod": "RatMod"
 }
