@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModEntities {
     public static final EntityType<RatEntity> RAT = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(Ratmod.MOD_ID, "rat"),
-            EntityType.Builder.create(RatEntity::new,  SpawnGroup.CREATURE).dimensions(0.2f, 0.2f).build(
+            EntityType.Builder.create(RatEntity::new,  SpawnGroup.CREATURE).dimensions(0.5f, 0.3f).build(
                     RegistryKey.of(RegistryKeys.ENTITY_TYPE, Identifier.of("ratmod", "rat"))));
 
 

@@ -1,11 +1,10 @@
 package io.github.ryanstudioo.items;
 
+import io.github.ryanstudioo.ModEntities;
 import io.github.ryanstudioo.Ratmod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -16,6 +15,7 @@ import java.util.function.Function;
 
 public class ModItems {
     public static Item cheese;
+    public static Item RAT_SPAWN_EGG;
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         // Create the item key.
@@ -40,6 +40,9 @@ public class ModItems {
                 .saturationModifier(1)
                 .build()));
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, cheese);
+
+        RAT_SPAWN_EGG = register("rat_spawn_egg", settings -> new SpawnEggItem(ModEntities.RAT, settings), new Item.Settings());
+        addToItemGroup(ItemGroups.SPAWN_EGGS, RAT_SPAWN_EGG);
     }
 
 }
