@@ -5,6 +5,7 @@ Rat Mod is a Minecraft Fabric mod made for 1.21.4
 Rat Mod adds features like Rats, Cheese, and more rat related features in game!
 
 ## Installation
+- ### [Download on Modrinth](https://modrinth.com/mod/rat-mod)
 - ### [Download on CurseForge](https://www.curseforge.com/minecraft/mc-mods/rat-ryanstudio)
 ### [Jar file](.Downloads) (Click)
 
