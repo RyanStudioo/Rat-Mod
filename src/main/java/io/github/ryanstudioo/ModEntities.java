@@ -12,7 +12,7 @@ public class ModEntities {
     public static final EntityType<RatEntity> RAT = Registry.register(
             Registries.ENTITY_TYPE,
             Identifier.of("ratmod", "rat"),
-            EntityType.Builder.create(RatEntity::new, SpawnGroup.CREATURE).dimensions(0.75f, 0.75f).build("cube"));
+            EntityType.Builder.create(RatEntity::new, SpawnGroup.CREATURE).dimensions(0.75f, 0.75f).build("rat"));
 
 
     public static void registerEntities() {
