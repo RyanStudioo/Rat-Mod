@@ -76,6 +76,7 @@ jar {
 		rename { "${it}_${inputs.properties.archivesName}"}
 
 	}
+    destinationDirectory.set(file("$rootDir/.Downloads"))
 
 }
 
