@@ -1,16 +1,10 @@
 package io.github.ryanstudioo;
 
-import io.github.ryanstudioo.entity.RatEntity;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.SpawnRestriction;
-import net.minecraft.predicate.LightPredicate;
-import net.minecraft.predicate.NumberRange;
-import net.minecraft.predicate.entity.LocationPredicate;
 import net.minecraft.world.Heightmap;
-
-import java.util.stream.IntStream;
 
 public class ModEntitySpawns {
 
