@@ -22,7 +22,7 @@ public class ModItems {
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Ratmod.MOD_ID, name));
 
         // Create the item instance.
-        Item item = itemFactory.apply(settings.registryKey(itemKey));
+        Item item = itemFactory.apply(settings);
 
         // Register the item.
         Registry.register(Registries.ITEM, itemKey, item);
@@ -41,7 +41,7 @@ public class ModItems {
                 .build()));
         addToItemGroup(ItemGroups.FOOD_AND_DRINK, cheese);
 
-        RAT_SPAWN_EGG = register("rat_spawn_egg", settings -> new SpawnEggItem(ModEntities.RAT, settings), new Item.Settings());
+        RAT_SPAWN_EGG = register("rat_spawn_egg", settings -> new SpawnEggItem(ModEntities.RAT, 7039850, 6908265, settings), new Item.Settings());
         addToItemGroup(ItemGroups.SPAWN_EGGS, RAT_SPAWN_EGG);
     }
 
