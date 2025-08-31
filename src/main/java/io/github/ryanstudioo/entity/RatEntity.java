@@ -27,12 +27,12 @@ public class RatEntity extends AnimalEntity {
 
     public static DefaultAttributeContainer.Builder createModAttributes() {
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.MAX_HEALTH, 10.0)
-                .add(EntityAttributes.MOVEMENT_SPEED, 0.2)
-                .add(EntityAttributes.ATTACK_DAMAGE, 1.0)
-                .add(EntityAttributes.FOLLOW_RANGE, 16.0)
-                .add(EntityAttributes.KNOCKBACK_RESISTANCE, 0.0)
-                .add(EntityAttributes.TEMPT_RANGE, 10.0);
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 16.0)
+                .add(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, 0.0)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 10.0);
     }
 
     @Override
@@ -56,7 +56,7 @@ public class RatEntity extends AnimalEntity {
 
     @Override
     public @Nullable PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        RatEntity babyRat = ModEntities.RAT.create(world, SpawnReason.BREEDING);
+        RatEntity babyRat = ModEntities.RAT.create(world);
         if (babyRat != null) {
             babyRat.setBaby(true);
         }

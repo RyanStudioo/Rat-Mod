@@ -1,15 +1,16 @@
-package io.github.ryanstudioo;
+package io.github.ryanstudioo.rendering;
 
+import io.github.ryanstudioo.RatEntityModel;
+import io.github.ryanstudioo.entity.RatEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
-import net.minecraft.client.render.entity.state.LivingEntityRenderState;
 import net.minecraft.util.Identifier;
 
 
 @Environment(EnvType.CLIENT)
-public class RatRenderer extends MobEntityRenderer<io.github.ryanstudioo.entity.RatEntity,LivingEntityRenderState, RatEntityModel> {
+public class RatRenderer extends MobEntityRenderer<io.github.ryanstudioo.entity.RatEntity, RatEntityModel> {
 
 
     private static final Identifier TEXTURE = Identifier.of("ratmod", "textures/entity/rat.png");
@@ -19,14 +20,10 @@ public class RatRenderer extends MobEntityRenderer<io.github.ryanstudioo.entity.
     }
 
     @Override
-    public Identifier getTexture(LivingEntityRenderState state) {
-        return TEXTURE; // Return actual texture, not null
+    public Identifier getTexture(RatEntity entity) {
+        return null;
     }
 
-    @Override
-    public LivingEntityRenderState createRenderState() {
-        return new LivingEntityRenderState(); // Return actual state, not null
-    }
 }
 
 
